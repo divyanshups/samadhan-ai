@@ -1,0 +1,12 @@
+.env
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+backend/data/
+frontend/dist/
+*.pyc
+docs
+backend/pytest.ini
+backend/tests
+start-windows.bat

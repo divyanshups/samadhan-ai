@@ -1,0 +1,715 @@
+{
+  "version": "prototype-1.0",
+  "departments": [
+    {
+      "id": "pwd",
+      "en": "PWD · Road Division",
+      "hi": "लोक निर्माण विभाग",
+      "officer": "Assistant Engineer"
+    },
+    {
+      "id": "phed",
+      "en": "PHED · Water Supply",
+      "hi": "लोक स्वास्थ्य यांत्रिकी विभाग",
+      "officer": "Sub Engineer"
+    },
+    {
+      "id": "revenue",
+      "en": "Revenue",
+      "hi": "राजस्व विभाग",
+      "officer": "Tehsildar"
+    },
+    {
+      "id": "education",
+      "en": "Education",
+      "hi": "शिक्षा विभाग",
+      "officer": "Block Education Officer"
+    },
+    {
+      "id": "health",
+      "en": "Health",
+      "hi": "स्वास्थ्य विभाग",
+      "officer": "Block Medical Officer"
+    },
+    {
+      "id": "urban",
+      "en": "Urban Administration",
+      "hi": "नगरीय प्रशासन",
+      "officer": "Chief Municipal Officer"
+    },
+    {
+      "id": "electricity",
+      "en": "Electricity",
+      "hi": "विद्युत विभाग",
+      "officer": "Junior Engineer"
+    },
+    {
+      "id": "forest",
+      "en": "Forest",
+      "hi": "वन विभाग",
+      "officer": "Range Officer"
+    },
+    {
+      "id": "women_child",
+      "en": "Women & Child",
+      "hi": "महिला एवं बाल विकास",
+      "officer": "Child Development Project Officer"
+    },
+    {
+      "id": "general",
+      "en": "General Grievance Desk",
+      "hi": "सामान्य शिकायत प्रकोष्ठ",
+      "officer": "Grievance Officer"
+    },
+    {
+      "id": "drainage",
+      "en": "Drainage and Sewerage Division",
+      "hi": "जल निकासी और सीवरेज विभाग",
+      "officer": "Drainage Officer"
+    },
+    {
+      "id": "sanitation",
+      "en": "Sanitation Division",
+      "hi": "स्वच्छता विभाग",
+      "officer": "Sanitation Officer"
+    },
+    {
+      "id": "social",
+      "en": "Pension and Social Welfare Department",
+      "hi": "पेंशन और समाज कल्याण विभाग",
+      "officer": "Social Welfare Officer"
+    }
+  ],
+  "categories": [
+    {
+      "id": "potholes",
+      "department_id": "pwd",
+      "en": "Potholes",
+      "hi": "सड़क पर गड्ढे",
+      "min_days": 3,
+      "max_days": 7,
+      "keywords": "pothole road गड्ढे सड़क",
+      "sop_ref": "sops/pwd/potholes.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "road_surface",
+      "department_id": "pwd",
+      "en": "Damaged road surface",
+      "hi": "सड़क की खराब सतह",
+      "min_days": 7,
+      "max_days": 14,
+      "keywords": "road surface सड़क",
+      "sop_ref": "sops/pwd/road_surface.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "footpath",
+      "department_id": "pwd",
+      "en": "Damaged footpath",
+      "hi": "खराब फुटपाथ",
+      "min_days": 5,
+      "max_days": 10,
+      "keywords": "footpath pavement फुटपाथ",
+      "sop_ref": "sops/pwd/footpath.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "water_supply",
+      "department_id": "phed",
+      "en": "No water supply",
+      "hi": "पानी की आपूर्ति बंद",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "water supply पानी आपूर्ति",
+      "sop_ref": "sops/phed/water_supply.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "water_leak",
+      "department_id": "phed",
+      "en": "Pipeline leakage",
+      "hi": "पाइपलाइन में रिसाव",
+      "min_days": 1,
+      "max_days": 4,
+      "keywords": "leak pipe पानी पाइप",
+      "sop_ref": "sops/phed/water_leak.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "handpump",
+      "department_id": "phed",
+      "en": "Broken handpump",
+      "hi": "खराब हैंडपंप",
+      "min_days": 2,
+      "max_days": 5,
+      "keywords": "handpump हैंडपंप",
+      "sop_ref": "sops/phed/handpump.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "land_record",
+      "department_id": "revenue",
+      "en": "Land record correction",
+      "hi": "भूमि रिकॉर्ड में सुधार",
+      "min_days": 15,
+      "max_days": 30,
+      "keywords": "land record जमीन भूमि",
+      "sop_ref": "sops/revenue/land_record.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "certificate",
+      "department_id": "revenue",
+      "en": "Certificate processing delay",
+      "hi": "प्रमाण पत्र में देरी",
+      "min_days": 7,
+      "max_days": 15,
+      "keywords": "certificate प्रमाण",
+      "sop_ref": "sops/revenue/certificate.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "teacher",
+      "department_id": "education",
+      "en": "Teacher absence",
+      "hi": "शिक्षक की अनुपस्थिति",
+      "min_days": 2,
+      "max_days": 7,
+      "keywords": "teacher absent शिक्षक",
+      "sop_ref": "sops/education/teacher.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "school",
+      "department_id": "education",
+      "en": "School facility issue",
+      "hi": "विद्यालय की सुविधा में समस्या",
+      "min_days": 7,
+      "max_days": 15,
+      "keywords": "school classroom स्कूल विद्यालय",
+      "sop_ref": "sops/education/school.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "scholarship",
+      "department_id": "education",
+      "en": "Scholarship delay",
+      "hi": "छात्रवृत्ति में देरी",
+      "min_days": 7,
+      "max_days": 21,
+      "keywords": "scholarship छात्रवृत्ति",
+      "sop_ref": "sops/education/scholarship.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "clinic",
+      "department_id": "health",
+      "en": "Clinic service unavailable",
+      "hi": "क्लिनिक सेवा उपलब्ध नहीं",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "clinic doctor hospital डॉक्टर अस्पताल",
+      "sop_ref": "sops/health/clinic.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "mosquito",
+      "department_id": "health",
+      "en": "Mosquito breeding",
+      "hi": "मच्छरों का प्रजनन",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "mosquito मच्छर",
+      "sop_ref": "sops/health/mosquito.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "health_hazard",
+      "department_id": "health",
+      "en": "Public health hazard",
+      "hi": "सार्वजनिक स्वास्थ्य जोखिम",
+      "min_days": 1,
+      "max_days": 2,
+      "keywords": "health contamination बीमारी स्वास्थ्य",
+      "sop_ref": "sops/health/health_hazard.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "streetlight",
+      "department_id": "urban",
+      "en": "Streetlight not working",
+      "hi": "स्ट्रीट लाइट बंद",
+      "min_days": 2,
+      "max_days": 5,
+      "keywords": "streetlight light लाइट",
+      "sop_ref": "sops/urban/streetlight.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "park",
+      "department_id": "urban",
+      "en": "Public park maintenance",
+      "hi": "सार्वजनिक पार्क का रखरखाव",
+      "min_days": 3,
+      "max_days": 7,
+      "keywords": "park पार्क",
+      "sop_ref": "sops/urban/park.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "public_asset",
+      "department_id": "urban",
+      "en": "Damaged public amenity",
+      "hi": "सार्वजनिक सुविधा क्षतिग्रस्त",
+      "min_days": 5,
+      "max_days": 10,
+      "keywords": "bench amenity सुविधा",
+      "sop_ref": "sops/urban/public_asset.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "power",
+      "department_id": "electricity",
+      "en": "Power outage",
+      "hi": "बिजली आपूर्ति बंद",
+      "min_days": 1,
+      "max_days": 2,
+      "keywords": "power outage electricity बिजली",
+      "sop_ref": "sops/electricity/power.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "voltage",
+      "department_id": "electricity",
+      "en": "Voltage fluctuation",
+      "hi": "वोल्टेज में उतार-चढ़ाव",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "voltage वोल्टेज",
+      "sop_ref": "sops/electricity/voltage.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "transformer",
+      "department_id": "electricity",
+      "en": "Transformer fault",
+      "hi": "ट्रांसफॉर्मर खराब",
+      "min_days": 1,
+      "max_days": 5,
+      "keywords": "transformer ट्रांसफॉर्मर",
+      "sop_ref": "sops/electricity/transformer.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "tree_cutting",
+      "department_id": "forest",
+      "en": "Suspected illegal tree cutting",
+      "hi": "संदिग्ध अवैध पेड़ कटाई",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "cutting forest tree कटाई जंगल",
+      "sop_ref": "sops/forest/tree_cutting.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "fallen_tree",
+      "department_id": "forest",
+      "en": "Fallen tree obstruction",
+      "hi": "गिरे पेड़ से अवरोध",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "fallen tree पेड़ गिरा",
+      "sop_ref": "sops/forest/fallen_tree.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "wildlife",
+      "department_id": "forest",
+      "en": "Wildlife-related grievance",
+      "hi": "वन्यजीव संबंधी शिकायत",
+      "min_days": 1,
+      "max_days": 2,
+      "keywords": "wildlife animal वन्यजीव",
+      "sop_ref": "sops/forest/wildlife.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "nutrition",
+      "department_id": "women_child",
+      "en": "Anganwadi nutrition supply",
+      "hi": "आंगनवाड़ी पोषण आपूर्ति",
+      "min_days": 2,
+      "max_days": 5,
+      "keywords": "nutrition food पोषण",
+      "sop_ref": "sops/women_child/nutrition.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "anganwadi",
+      "department_id": "women_child",
+      "en": "Anganwadi centre unavailable",
+      "hi": "आंगनवाड़ी केंद्र बंद",
+      "min_days": 2,
+      "max_days": 5,
+      "keywords": "anganwadi आंगनवाड़ी",
+      "sop_ref": "sops/women_child/anganwadi.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "benefit",
+      "department_id": "women_child",
+      "en": "Benefit application delay",
+      "hi": "लाभ आवेदन में देरी",
+      "min_days": 7,
+      "max_days": 14,
+      "keywords": "benefit application लाभ",
+      "sop_ref": "sops/women_child/benefit.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "service_delay",
+      "department_id": "general",
+      "en": "Other civic service delay",
+      "hi": "अन्य नागरिक सेवा में देरी",
+      "min_days": 3,
+      "max_days": 7,
+      "keywords": "service delay सेवा",
+      "sop_ref": "sops/general/service_delay.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": true
+    },
+    {
+      "id": "staff_conduct",
+      "department_id": "general",
+      "en": "Staff conduct complaint",
+      "hi": "कर्मचारी व्यवहार की शिकायत",
+      "min_days": 3,
+      "max_days": 7,
+      "keywords": "staff conduct व्यवहार",
+      "sop_ref": "sops/general/staff_conduct.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": true
+    },
+    {
+      "id": "other",
+      "department_id": "general",
+      "en": "Other civic grievance",
+      "hi": "अन्य नागरिक शिकायत",
+      "min_days": 3,
+      "max_days": 7,
+      "keywords": "other अन्य",
+      "sop_ref": "sops/general/other.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": true
+    },
+    {
+      "id": "drain",
+      "department_id": "drainage",
+      "en": "Blocked drain",
+      "hi": "बंद नाली",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "drain blocked नाली बंद",
+      "sop_ref": "sops/drainage/drain.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "sewer_overflow",
+      "department_id": "drainage",
+      "en": "Sewer overflow",
+      "hi": "सीवर का बहना",
+      "min_days": 1,
+      "max_days": 3,
+      "keywords": "sewer sewage overflow सीवर",
+      "sop_ref": "sops/drainage/sewer_overflow.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "waterlogging",
+      "department_id": "drainage",
+      "en": "Drainage-related waterlogging",
+      "hi": "जल निकासी से जुड़ा जलभराव",
+      "min_days": 1,
+      "max_days": 4,
+      "keywords": "waterlogging flooding जलभराव",
+      "sop_ref": "sops/drainage/waterlogging.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "garbage",
+      "department_id": "sanitation",
+      "en": "Missed garbage collection",
+      "hi": "कचरा नहीं उठाया गया",
+      "min_days": 1,
+      "max_days": 2,
+      "keywords": "garbage waste कचरा",
+      "sop_ref": "sops/sanitation/garbage.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "sanitation",
+      "department_id": "sanitation",
+      "en": "Unsanitary public place",
+      "hi": "सार्वजनिक स्थान पर गंदगी",
+      "min_days": 2,
+      "max_days": 3,
+      "keywords": "dirty sanitation गंदगी",
+      "sop_ref": "sops/sanitation/sanitation.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "public_toilet",
+      "department_id": "sanitation",
+      "en": "Public toilet issue",
+      "hi": "सार्वजनिक शौचालय की समस्या",
+      "min_days": 3,
+      "max_days": 5,
+      "keywords": "toilet public शौचालय",
+      "sop_ref": "sops/sanitation/public_toilet.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "pension_payment",
+      "department_id": "social",
+      "en": "Missing pension payment",
+      "hi": "पेंशन भुगतान नहीं मिला",
+      "min_days": 7,
+      "max_days": 21,
+      "keywords": "pension payment पेंशन भुगतान",
+      "sop_ref": "sops/social/pension_payment.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "pension_correction",
+      "department_id": "social",
+      "en": "Pension record correction",
+      "hi": "पेंशन रिकॉर्ड सुधार",
+      "min_days": 7,
+      "max_days": 15,
+      "keywords": "pension correction beneficiary पेंशन सुधार",
+      "sop_ref": "sops/social/pension_correction.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "encroachment",
+      "department_id": "revenue",
+      "en": "Land encroachment grievance",
+      "hi": "भूमि अतिक्रमण की शिकायत",
+      "min_days": 7,
+      "max_days": 30,
+      "keywords": "land encroachment अतिक्रमण",
+      "sop_ref": "sops/revenue/encroachment.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    },
+    {
+      "id": "pension",
+      "department_id": "social",
+      "en": "Pension application delay",
+      "hi": "पेंशन आवेदन में देरी",
+      "min_days": 7,
+      "max_days": 21,
+      "keywords": "pension पेंशन",
+      "sop_ref": "sops/social/pension.md",
+      "sop_version": "prototype-1.0",
+      "manual_allocation": false
+    }
+  ],
+  "districts": [
+    {
+      "id": "Bhopal",
+      "en": "Bhopal",
+      "hi": "भोपाल",
+      "localities": [
+        {
+          "id": "Bhopal City",
+          "en": "Bhopal City",
+          "hi": "भोपाल शहर"
+        },
+        {
+          "id": "Berasia",
+          "en": "Berasia",
+          "hi": "बैरसिया"
+        },
+        {
+          "id": "Kolar",
+          "en": "Kolar",
+          "hi": "कोलार"
+        },
+        {
+          "id": "Huzur",
+          "en": "Huzur",
+          "hi": "हुज़ूर"
+        },
+        {
+          "id": "Phanda",
+          "en": "Phanda",
+          "hi": "फंदा"
+        }
+      ]
+    },
+    {
+      "id": "Indore",
+      "en": "Indore",
+      "hi": "इंदौर",
+      "localities": [
+        {
+          "id": "Indore City",
+          "en": "Indore City",
+          "hi": "इंदौर शहर"
+        },
+        {
+          "id": "Mhow",
+          "en": "Mhow",
+          "hi": "महू"
+        },
+        {
+          "id": "Depalpur",
+          "en": "Depalpur",
+          "hi": "देपालपुर"
+        },
+        {
+          "id": "Sanwer",
+          "en": "Sanwer",
+          "hi": "सांवेर"
+        },
+        {
+          "id": "Hatod",
+          "en": "Hatod",
+          "hi": "हातोद"
+        }
+      ]
+    },
+    {
+      "id": "Sehore",
+      "en": "Sehore",
+      "hi": "सीहोर",
+      "localities": [
+        {
+          "id": "Sehore Town",
+          "en": "Sehore Town",
+          "hi": "सीहोर नगर"
+        },
+        {
+          "id": "Ashta",
+          "en": "Ashta",
+          "hi": "आष्टा"
+        },
+        {
+          "id": "Ichhawar",
+          "en": "Ichhawar",
+          "hi": "इछावर"
+        },
+        {
+          "id": "Budhni",
+          "en": "Budhni",
+          "hi": "बुधनी"
+        },
+        {
+          "id": "Nasrullaganj",
+          "en": "Nasrullaganj",
+          "hi": "नसरुल्लागंज"
+        }
+      ]
+    },
+    {
+      "id": "Mandla",
+      "en": "Mandla",
+      "hi": "मंडला",
+      "localities": [
+        {
+          "id": "Mandla Town",
+          "en": "Mandla Town",
+          "hi": "मंडला नगर"
+        },
+        {
+          "id": "Nainpur",
+          "en": "Nainpur",
+          "hi": "नैनपुर"
+        },
+        {
+          "id": "Bichhiya",
+          "en": "Bichhiya",
+          "hi": "बिछिया"
+        },
+        {
+          "id": "Niwas",
+          "en": "Niwas",
+          "hi": "निवास"
+        },
+        {
+          "id": "Ghughri",
+          "en": "Ghughri",
+          "hi": "घुघरी"
+        }
+      ]
+    },
+    {
+      "id": "Jhabua",
+      "en": "Jhabua",
+      "hi": "झाबुआ",
+      "localities": [
+        {
+          "id": "Jhabua Town",
+          "en": "Jhabua Town",
+          "hi": "झाबुआ नगर"
+        },
+        {
+          "id": "Thandla",
+          "en": "Thandla",
+          "hi": "थांदला"
+        },
+        {
+          "id": "Petlawad",
+          "en": "Petlawad",
+          "hi": "पेटलावद"
+        },
+        {
+          "id": "Meghnagar",
+          "en": "Meghnagar",
+          "hi": "मेघनगर"
+        },
+        {
+          "id": "Ranapur",
+          "en": "Ranapur",
+          "hi": "राणापुर"
+        }
+      ]
+    }
+  ]
+}
