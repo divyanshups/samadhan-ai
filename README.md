@@ -276,4 +276,4 @@ Open an issue to report a bug or discuss a change. For a pull request, describe 
 
 ## License
 
-This repository does not currently include a license file. Add a license before distributing the project under specific reuse terms.
+This repository is under MIT LICENSE.
